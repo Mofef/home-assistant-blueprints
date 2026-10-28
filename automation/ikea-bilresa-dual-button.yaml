@@ -11,7 +11,7 @@ blueprint:
   domain: automation
   source_url: https://raw.githubusercontent.com/Skaronator/home-assistant-blueprints/refs/heads/main/automation/ikea-bilresa-dual-button.yaml
   homeassistant:
-    min_version: 2026.8.0
+    min_version: 2026.1.0
 
   input:
     setup:
@@ -28,12 +28,12 @@ blueprint:
           selector: &button_event_selector
             entity:
               multiple: true
-              filter:
-                domain: event
-                device_class: button
-                device:
-                  manufacturer: IKEA of Sweden
-                  model: BILRESA dual button
+#              filter:
+#                domain: event
+#                device_class: button
+#                device:
+#                  manufacturer: IKEA of Sweden
+#                  model: BILRESA dual button
 
         button2_event:
           name: Entity
